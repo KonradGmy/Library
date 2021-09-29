@@ -1,0 +1,36 @@
+﻿@model IEnumerable<Library.Models.ReservationModel>
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h1>Reservations for "@ViewBag.message"</h1>
+
+<p>
+    <a asp-controller="Library" asp-action="Index">Back to book list</a>
+</p>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                User email
+            </th>
+            <th>
+                Reservation date
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.User.Email)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Date)
+            </td>
+        </tr>
+}
+    </tbody>
+</table>
