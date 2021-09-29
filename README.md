@@ -1,7 +1,7 @@
 # Library
 ## Description
 A simple web library project in asp.net core.
-## Game screenshots
+## Project screenshots
 # Home
 ![screenshot1](https://github.com/KonradGmy/Library/blob/main/Screenshots/home.png)
 # Login first
